@@ -1,7 +1,9 @@
-# File: my_scraper/middlewares/proxy_middleware.py
+# my_scraper/middlewares/proxy_middleware.py
+
 import logging
 import random
 from typing import Optional, List
+import scrapy
 from scrapy import Request, Spider
 
 logger = logging.getLogger(__name__)

@@ -54,31 +54,19 @@ COOKIES_ENABLED = False
 #DOWNLOADER_MIDDLEWARES = {
 #    "my_scraper.middlewares.MyScraperDownloaderMiddleware": 543,
 #}
-
-# Add these settings to your Scrapy project's settings.py
 DOWNLOADER_MIDDLEWARES = {
     'my_scraper.middlewares.proxy_middleware.RotatingProxyMiddleware': 750,
 }
 
-# List of proxy URLs
-# PROXY_LIST = [
-#     'http://proxy1.example.com:8080',
-#     'http://proxy2.example.com:8080',
-#     'http://proxy3.example.com:8080',
-# ]
-
-# Free proxy list (Update these with currently working proxies)
-# Starting with some verified free proxies
+# Free proxy list 
 PROXY_LIST = [
     'http://198.49.68.80:80',
     'http://20.111.54.16:80',
     'http://52.88.105.39:80'
 ]
 # Maximum number of times a proxy can fail before being removed
-PROXY_MAX_FAILED_TIMES = 3
+PROXY_MAX_FAILED_TIMES = 2
 
-# Alternative: Load proxies from file
-PROXY_LIST_FILE = 'proxies.txt'
 
 # Proxy settings
 PROXY_MODE = 0  # 0 = Every requests have different proxy, 1 = Take only one proxy from the list and assign it to every requests

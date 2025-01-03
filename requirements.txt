@@ -1,16 +1,5 @@
-# Core dependencies
-scrapy==2.11.0
-requests==2.31.0
+scrapy
+requests
 python-dotenv
 logging
 typing
-
-# Proxy handling
-requests[socks]
-python-socks
-
-# Development dependencies
-pytest
-black
-flake8
-isort

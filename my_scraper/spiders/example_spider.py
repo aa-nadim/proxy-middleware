@@ -9,14 +9,14 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s [%(levelname)s] %(message)s',
     handlers=[
-        logging.FileHandler('spider.log'),
+        logging.FileHandler('LOGS/spider.log'),
         logging.StreamHandler()
     ]
 )
 
 class ExampleSpider(scrapy.Spider):
     name = 'example_spider'
-    start_urls = ['https://example.com']
+    start_urls = ['https://www.scrapingcourse.com/ecommerce/']
     
     custom_settings = {
         'ROBOTSTXT_OBEY': True,

@@ -1,4 +1,4 @@
-# File: my_scraper/spiders/test_spider.py
+# my_scraper/spiders/test_spider.py
 import scrapy
 
 class TestSpider(scrapy.Spider):
