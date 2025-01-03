@@ -1,24 +1,30 @@
-2025-01-03 15:51:44,890 [INFO] Scrapy 2.11.0 started (bot: my_scraper)
-2025-01-03 15:51:44,892 [INFO] Versions: lxml 5.3.0.0, libxml2 2.12.9, cssselect 1.2.0, parsel 1.9.1, w3lib 2.2.1, Twisted 22.10.0, Python 3.12.3 (main, Nov  6 2024, 18:32:19) [GCC 13.2.0], pyOpenSSL 24.3.0 (OpenSSL 3.4.0 22 Oct 2024), cryptography 44.0.0, Platform Linux-6.8.0-51-generic-x86_64-with-glibc2.39
-2025-01-03 15:51:44,894 [INFO] Enabled addons:
+2025-01-03 16:28:28,351 [INFO] Received SIGINT, shutting down gracefully. Send again to force 
+2025-01-03 16:28:28,352 [INFO] Closing spider (shutdown)
+2025-01-03 16:28:30,247 [INFO] Received SIGINT twice, forcing unclean shutdown
+2025-01-03 16:28:30,250 [WARNING] Proxy http://20.111.54.16:80 failed. Reason: An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+].. Total failures: 10
+2025-01-03 16:28:30,251 [INFO] Using proxy http://20.111.54.16:80 for https://www.scrapingcourse.com/robots.txt
+2025-01-03 16:28:33,070 [INFO] Scrapy 2.11.0 started (bot: my_scraper)
+2025-01-03 16:28:33,072 [INFO] Versions: lxml 5.3.0.0, libxml2 2.12.9, cssselect 1.2.0, parsel 1.9.1, w3lib 2.2.1, Twisted 22.10.0, Python 3.12.3 (main, Nov  6 2024, 18:32:19) [GCC 13.2.0], pyOpenSSL 24.3.0 (OpenSSL 3.4.0 22 Oct 2024), cryptography 44.0.0, Platform Linux-6.8.0-51-generic-x86_64-with-glibc2.39
+2025-01-03 16:28:33,073 [INFO] Enabled addons:
 []
-2025-01-03 15:51:44,894 [WARNING] /home/w3e12/Desktop/a-11/assignment/scrapy-assignment/env/lib/python3.12/site-packages/scrapy/utils/request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+2025-01-03 16:28:33,074 [WARNING] /home/w3e12/Desktop/a-11/assignment/scrapy-assignment/env/lib/python3.12/site-packages/scrapy/utils/request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
 
 It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
 
 See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
   return cls(crawler)
 
-2025-01-03 15:51:44,895 [DEBUG] Using selector: EpollSelector
-2025-01-03 15:51:44,895 [DEBUG] Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
-2025-01-03 15:51:44,896 [DEBUG] Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
-2025-01-03 15:51:44,909 [INFO] Telnet Password: aedb71caf95deb32
-2025-01-03 15:51:44,959 [INFO] Enabled extensions:
+2025-01-03 16:28:33,074 [DEBUG] Using selector: EpollSelector
+2025-01-03 16:28:33,075 [DEBUG] Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-01-03 16:28:33,075 [DEBUG] Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+2025-01-03 16:28:33,088 [INFO] Telnet Password: 94a0404e4dd6eb63
+2025-01-03 16:28:33,130 [INFO] Enabled extensions:
 ['scrapy.extensions.corestats.CoreStats',
  'scrapy.extensions.telnet.TelnetConsole',
  'scrapy.extensions.memusage.MemoryUsage',
  'scrapy.extensions.logstats.LogStats']
-2025-01-03 15:51:44,960 [INFO] Overridden settings:
+2025-01-03 16:28:33,131 [INFO] Overridden settings:
 {'BOT_NAME': 'my_scraper',
  'COOKIES_ENABLED': False,
  'DOWNLOAD_DELAY': 2,
@@ -29,8 +35,8 @@ See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for 
  'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
  'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
                '(KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
-2025-01-03 15:51:45,066 [INFO] Initialized RotatingProxyMiddleware with 3 proxies
-2025-01-03 15:51:45,067 [INFO] Enabled downloader middlewares:
+2025-01-03 16:28:33,269 [INFO] Initialized RotatingProxyMiddleware with 3 proxies
+2025-01-03 16:28:33,270 [INFO] Enabled downloader middlewares:
 ['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
  'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
@@ -43,94 +49,58 @@ See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for 
  'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
  'my_scraper.middlewares.proxy_middleware.RotatingProxyMiddleware',
  'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2025-01-03 15:51:45,069 [INFO] Enabled spider middlewares:
+2025-01-03 16:28:33,276 [INFO] Enabled spider middlewares:
 ['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
  'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
  'scrapy.spidermiddlewares.referer.RefererMiddleware',
  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
  'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2025-01-03 15:51:45,069 [INFO] Enabled item pipelines:
+2025-01-03 16:28:33,276 [INFO] Enabled item pipelines:
 []
-2025-01-03 15:51:45,069 [INFO] Spider opened
-2025-01-03 15:51:45,074 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 15:51:45,075 [INFO] Telnet console listening on 127.0.0.1:6023
-2025-01-03 15:51:45,077 [INFO] Using proxy http://198.49.68.80:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 15:51:45,636 [WARNING] Proxy http://198.49.68.80:80 failed. Reason: Could not open CONNECT tunnel with proxy 198.49.68.80:80 [{'status': 500, 'reason': b'Internal Server Error'}]. Total failures: 1
-2025-01-03 15:51:45,637 [INFO] Using proxy http://198.49.68.80:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 15:51:47,327 [WARNING] Proxy http://198.49.68.80:80 failed. Reason: Could not open CONNECT tunnel with proxy 198.49.68.80:80 [{'status': 500, 'reason': b'Internal Server Error'}]. Total failures: 2
-2025-01-03 15:51:47,328 [INFO] Using proxy http://20.111.54.16:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 15:52:45,075 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 15:53:45,075 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 15:54:45,074 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 15:54:49,032 [WARNING] Proxy http://20.111.54.16:80 failed. Reason: User timeout caused connection failure: Getting https://www.scrapingcourse.com/robots.txt took longer than 180.0 seconds... Total failures: 1
-2025-01-03 15:54:49,033 [INFO] Using proxy http://198.49.68.80:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 15:54:49,584 [WARNING] Proxy http://198.49.68.80:80 failed. Reason: Could not open CONNECT tunnel with proxy 198.49.68.80:80 [{'status': 500, 'reason': b'Internal Server Error'}]. Total failures: 3
-2025-01-03 15:54:49,585 [INFO] Using proxy http://52.88.105.39:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 15:55:45,075 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 15:56:45,075 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 15:57:06,120 [WARNING] Proxy http://52.88.105.39:80 failed. Reason: TCP connection timed out: 110: Connection timed out.. Total failures: 1
-2025-01-03 15:57:06,122 [INFO] Using proxy http://198.49.68.80:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 15:57:09,407 [WARNING] Proxy http://198.49.68.80:80 failed. Reason: Could not open CONNECT tunnel with proxy 198.49.68.80:80 [{'status': 500, 'reason': b'Internal Server Error'}]. Total failures: 4
-2025-01-03 15:57:09,409 [INFO] Using proxy http://20.111.54.16:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 15:57:45,074 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 15:58:45,074 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 15:59:45,074 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:00:09,416 [WARNING] Proxy http://20.111.54.16:80 failed. Reason: User timeout caused connection failure: Getting https://www.scrapingcourse.com/robots.txt took longer than 180.0 seconds... Total failures: 2
-2025-01-03 16:00:09,417 [INFO] Using proxy http://198.49.68.80:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 16:00:10,785 [WARNING] Proxy http://198.49.68.80:80 failed. Reason: Could not open CONNECT tunnel with proxy 198.49.68.80:80 [{'status': 500, 'reason': b'Internal Server Error'}]. Total failures: 5
-2025-01-03 16:00:10,785 [INFO] Using proxy http://198.49.68.80:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 16:00:12,804 [WARNING] Proxy http://198.49.68.80:80 failed. Reason: Could not open CONNECT tunnel with proxy 198.49.68.80:80 [{'status': 500, 'reason': b'Internal Server Error'}]. Total failures: 6
-2025-01-03 16:00:12,805 [INFO] Using proxy http://20.111.54.16:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 16:00:45,074 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:01:45,074 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:02:29,704 [WARNING] Proxy http://20.111.54.16:80 failed. Reason: TCP connection timed out: 110: Connection timed out.. Total failures: 3
-2025-01-03 16:02:29,706 [INFO] Using proxy http://20.111.54.16:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 16:02:45,075 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:03:45,074 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:04:45,075 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:05:29,713 [WARNING] Proxy http://20.111.54.16:80 failed. Reason: User timeout caused connection failure: Getting https://www.scrapingcourse.com/robots.txt took longer than 180.0 seconds... Total failures: 4
-2025-01-03 16:05:29,714 [INFO] Using proxy http://198.49.68.80:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 16:05:31,107 [WARNING] Proxy http://198.49.68.80:80 failed. Reason: Could not open CONNECT tunnel with proxy 198.49.68.80:80 [{'status': 500, 'reason': b'Internal Server Error'}]. Total failures: 7
-2025-01-03 16:05:31,109 [INFO] Using proxy http://52.88.105.39:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 16:05:45,075 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:06:45,074 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:07:45,074 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:07:45,096 [WARNING] Proxy http://52.88.105.39:80 failed. Reason: TCP connection timed out: 110: Connection timed out.. Total failures: 2
-2025-01-03 16:07:45,097 [INFO] Using proxy http://20.111.54.16:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 16:08:45,074 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:09:45,075 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:10:45,074 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:10:45,103 [WARNING] Proxy http://20.111.54.16:80 failed. Reason: User timeout caused connection failure: Getting https://www.scrapingcourse.com/robots.txt took longer than 180.0 seconds... Total failures: 5
-2025-01-03 16:10:45,103 [INFO] Using proxy http://20.111.54.16:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 16:11:45,075 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:12:45,075 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:13:45,074 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:13:45,105 [WARNING] Proxy http://20.111.54.16:80 failed. Reason: User timeout caused connection failure: Getting https://www.scrapingcourse.com/robots.txt took longer than 180.0 seconds... Total failures: 6
-2025-01-03 16:13:45,106 [INFO] Using proxy http://198.49.68.80:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 16:13:45,662 [WARNING] Proxy http://198.49.68.80:80 failed. Reason: Could not open CONNECT tunnel with proxy 198.49.68.80:80 [{'status': 500, 'reason': b'Internal Server Error'}]. Total failures: 8
-2025-01-03 16:13:45,663 [INFO] Using proxy http://52.88.105.39:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 16:14:45,075 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:15:45,075 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:16:00,712 [WARNING] Proxy http://52.88.105.39:80 failed. Reason: TCP connection timed out: 110: Connection timed out.. Total failures: 3
-2025-01-03 16:16:00,712 [INFO] Using proxy http://20.111.54.16:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 16:16:45,074 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:17:45,075 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:18:45,074 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:19:00,715 [WARNING] Proxy http://20.111.54.16:80 failed. Reason: User timeout caused connection failure: Getting https://www.scrapingcourse.com/robots.txt took longer than 180.0 seconds... Total failures: 7
-2025-01-03 16:19:00,721 [INFO] Using proxy http://52.88.105.39:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 16:19:45,074 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:20:45,074 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:21:16,104 [WARNING] Proxy http://52.88.105.39:80 failed. Reason: TCP connection timed out: 110: Connection timed out.. Total failures: 4
-2025-01-03 16:21:16,105 [INFO] Using proxy http://52.88.105.39:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 16:21:45,075 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:22:45,075 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:23:31,272 [WARNING] Proxy http://52.88.105.39:80 failed. Reason: TCP connection timed out: 110: Connection timed out.. Total failures: 5
-2025-01-03 16:23:31,274 [INFO] Using proxy http://198.49.68.80:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 16:23:36,959 [WARNING] Proxy http://198.49.68.80:80 failed. Reason: Could not open CONNECT tunnel with proxy 198.49.68.80:80 [{'status': 500, 'reason': b'Internal Server Error'}]. Total failures: 9
-2025-01-03 16:23:36,961 [INFO] Using proxy http://20.111.54.16:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 16:23:45,075 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:24:45,074 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:25:45,074 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2025-01-03 16:25:50,536 [WARNING] Proxy http://20.111.54.16:80 failed. Reason: TCP connection timed out: 110: Connection timed out.. Total failures: 8
-2025-01-03 16:25:50,538 [INFO] Using proxy http://20.111.54.16:80 for https://www.scrapingcourse.com/robots.txt
-2025-01-03 16:26:45,074 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:28:33,277 [INFO] Spider opened
+2025-01-03 16:28:33,285 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:28:33,287 [INFO] Telnet console listening on 127.0.0.1:6023
+2025-01-03 16:28:33,290 [INFO] Using proxy http://198.49.68.80:80 for https://www.scrapingcourse.com/robots.txt
+2025-01-03 16:28:33,836 [WARNING] Proxy http://198.49.68.80:80 failed. Reason: Could not open CONNECT tunnel with proxy 198.49.68.80:80 [{'status': 500, 'reason': b'Internal Server Error'}]. Total failures: 1
+2025-01-03 16:28:33,837 [INFO] Using proxy http://20.111.54.16:80 for https://www.scrapingcourse.com/robots.txt
+2025-01-03 16:29:33,287 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:30:33,287 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:31:33,287 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:31:35,281 [WARNING] Proxy http://20.111.54.16:80 failed. Reason: User timeout caused connection failure: Getting https://www.scrapingcourse.com/robots.txt took longer than 180.0 seconds... Total failures: 1
+2025-01-03 16:31:35,281 [INFO] Using proxy http://198.49.68.80:80 for https://www.scrapingcourse.com/robots.txt
+2025-01-03 16:31:37,948 [WARNING] Proxy http://198.49.68.80:80 failed. Reason: Could not open CONNECT tunnel with proxy 198.49.68.80:80 [{'status': 500, 'reason': b'Internal Server Error'}]. Total failures: 2
+2025-01-03 16:31:37,950 [INFO] Using proxy http://20.111.54.16:80 for https://www.scrapingcourse.com/robots.txt
+2025-01-03 16:32:33,287 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:33:33,287 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:33:53,865 [WARNING] Proxy http://20.111.54.16:80 failed. Reason: TCP connection timed out: 110: Connection timed out.. Total failures: 2
+2025-01-03 16:33:53,867 [INFO] Using proxy http://52.88.105.39:80 for https://www.scrapingcourse.com/robots.txt
+2025-01-03 16:34:33,287 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:35:33,287 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:36:09,031 [WARNING] Proxy http://52.88.105.39:80 failed. Reason: TCP connection timed out: 110: Connection timed out.. Total failures: 1
+2025-01-03 16:36:09,032 [INFO] Using proxy http://52.88.105.39:80 for https://www.scrapingcourse.com/robots.txt
+2025-01-03 16:36:33,287 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:37:33,287 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:38:24,199 [WARNING] Proxy http://52.88.105.39:80 failed. Reason: TCP connection timed out: 110: Connection timed out.. Total failures: 2
+2025-01-03 16:38:24,200 [INFO] Using proxy http://52.88.105.39:80 for https://www.scrapingcourse.com/robots.txt
+2025-01-03 16:38:33,286 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:39:33,287 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:40:33,286 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:40:39,368 [WARNING] Proxy http://52.88.105.39:80 failed. Reason: TCP connection timed out: 110: Connection timed out.. Total failures: 3
+2025-01-03 16:40:39,371 [INFO] Using proxy http://20.111.54.16:80 for https://www.scrapingcourse.com/robots.txt
+2025-01-03 16:41:33,287 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:42:33,286 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:42:54,536 [WARNING] Proxy http://20.111.54.16:80 failed. Reason: TCP connection timed out: 110: Connection timed out.. Total failures: 3
+2025-01-03 16:42:54,536 [INFO] Using proxy http://20.111.54.16:80 for https://www.scrapingcourse.com/robots.txt
+2025-01-03 16:43:33,286 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:44:33,286 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:45:09,704 [WARNING] Proxy http://20.111.54.16:80 failed. Reason: TCP connection timed out: 110: Connection timed out.. Total failures: 4
+2025-01-03 16:45:09,705 [INFO] Using proxy http://20.111.54.16:80 for https://www.scrapingcourse.com/robots.txt
+2025-01-03 16:45:33,286 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:46:33,286 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:47:33,287 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:48:09,708 [WARNING] Proxy http://20.111.54.16:80 failed. Reason: User timeout caused connection failure: Getting https://www.scrapingcourse.com/robots.txt took longer than 180.0 seconds... Total failures: 5
+2025-01-03 16:48:09,710 [INFO] Using proxy http://20.111.54.16:80 for https://www.scrapingcourse.com/robots.txt
+2025-01-03 16:48:33,285 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-03 16:49:10,589 [INFO] Received SIGINT, shutting down gracefully. Send again to force 
+2025-01-03 16:49:10,590 [INFO] Closing spider (shutdown)
+2025-01-03 16:49:11,615 [INFO] Received SIGINT twice, forcing unclean shutdown
