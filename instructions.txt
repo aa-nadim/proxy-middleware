@@ -1,3 +1,6 @@
+https://www.zenrows.com/blog/scrapy-python#how-to-use-scrapy
+__________________________________________________________
+
 python3 --version
 ______________________
 mkdir my_scraper
