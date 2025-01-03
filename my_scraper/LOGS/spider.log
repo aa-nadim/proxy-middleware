@@ -59,3 +59,4 @@ See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for 
 2025-01-03 15:51:45,637 [INFO] Using proxy http://198.49.68.80:80 for https://www.scrapingcourse.com/robots.txt
 2025-01-03 15:51:47,327 [WARNING] Proxy http://198.49.68.80:80 failed. Reason: Could not open CONNECT tunnel with proxy 198.49.68.80:80 [{'status': 500, 'reason': b'Internal Server Error'}]. Total failures: 2
 2025-01-03 15:51:47,328 [INFO] Using proxy http://20.111.54.16:80 for https://www.scrapingcourse.com/robots.txt
+2025-01-03 15:52:45,075 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
