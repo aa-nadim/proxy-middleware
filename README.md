@@ -18,3 +18,6 @@ scrapy crawl scraper
 
 
 ```
+
+
+Presentation = `https://docs.google.com/presentation/d/1W4GICaeduiwRoNGFEi8RJen2SxXcvIdpv0TMgO9SXKA/edit?usp=sharing`
