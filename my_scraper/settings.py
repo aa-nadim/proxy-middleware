@@ -21,7 +21,7 @@ USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 16
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
@@ -73,7 +73,7 @@ PROXY_MODE = 0  # 0 = Every requests have different proxy, 1 = Take only one pro
 
 RANDOMIZE_DOWNLOAD_DELAY = True
 
-RETRY_TIMES = 10
+RETRY_TIMES = 2
 RETRY_HTTP_CODES = [500, 502, 503, 504, 522, 524, 408, 429]
 
 

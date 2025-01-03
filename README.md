@@ -13,8 +13,8 @@ cd proxy-middleware
 pip install -r requirements.txt
 
 cd my_scraper
-pip install -e .
-scrapy crawl test_spider
+
+scrapy crawl scraper
 
 
 ```
